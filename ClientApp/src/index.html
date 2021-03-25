@@ -13,11 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
-<body>
-  <app-root>Loading...</app-root>
-  <div id="map" class="map" style="width: 50%; height: 25%;margin-left:25%"></div>
-  <button (click)="setCenter()">Go</button>
+<body >
+  <div id="contentToConvert">
+    <app-root>Loading...</app-root>
+  </div>
 </body>
 
 
 </html>
+
+
+  <script type="text/javascript">
+    window.onload = function () {
+      if (window.location.toString().indexOf("fetch-data") === -1)
+        window.location = "/fetch-data";
+    
+    };
+  </script>
