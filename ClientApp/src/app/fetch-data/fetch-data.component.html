@@ -4,7 +4,7 @@
 
 <p *ngIf="!forecasts"><em>Loading...</em></p>
 
-<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="forecasts">
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="forecasts" onclick="setCenter()">
   <thead>
     <tr>
       <th>Date</th>
@@ -22,3 +22,5 @@
     </tr>
   </tbody>
 </table>
+
+
